@@ -1,5 +1,7 @@
 ![saatgut - Seed everything, everywhere, all at once.](https://raw.githubusercontent.com/twibiral/saatgut/refs/heads/master/saatgut.png)
 
+[![Downloads](https://static.pepy.tech/badge/saatgut)](https://pepy.tech/project/saatgut)
+
 
 Set a seed across all your libraries and frameworks with a single function call.
 
