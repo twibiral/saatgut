@@ -1,4 +1,4 @@
-![saatgut - Seed everything, everywhere, all at once.](./saatgut.png)
+![saatgut - Seed everything, everywhere, all at once.](https://raw.githubusercontent.com/twibiral/saatgut/refs/heads/master/saatgut.png)
 
 
 Set a seed across all your libraries and frameworks with a single function call.
@@ -91,4 +91,4 @@ If you want to contribute code, please take a look at the open issues.
 
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/twibiral/saatgut/blob/master/LICENSE) file for details.
