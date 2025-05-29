@@ -7,7 +7,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='saatgut',
-    version='0.1.1',
+    version='0.1.2',
     author='Tim Wibiral',
     packages=find_packages(),
     install_requires=[],    # Nothing! The package checks and seeds what is available.
