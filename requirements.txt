@@ -1,0 +1,3 @@
+# No packages are required!
+# The package checks by itself what packages are installed and
+# only seeds the packages that are installed.
