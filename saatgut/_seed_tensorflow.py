@@ -1,5 +1,5 @@
 """ This module provides functions to set random seeds for reproducibility in TensorFlow (Keras) and related libraries. """
-from _secure_import import secure_import
+from saatgut._secure_import import secure_import
 
 
 @secure_import('tensorflow')

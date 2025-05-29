@@ -1,7 +1,5 @@
 import os
 
-from _secure_import import secure_import
-
 
 def seed_random(seed: int):
     """

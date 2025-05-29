@@ -1,10 +1,10 @@
-from _seed_jax import seed_jax, domesticate_jax
-from _seed_numpy import seed_numpy, domesticate_numpy
-from _seed_random import seed_random, domesticate_random
-from _seed_tensorflow import seed_tensorflow, domesticate_tensorflow
-from _seed_torch import seed_torch, domesticate_torch
+from saatgut._seed_jax import seed_jax, domesticate_jax
+from saatgut._seed_numpy import seed_numpy, domesticate_numpy
+from saatgut._seed_random import seed_random, domesticate_random
+from saatgut._seed_tensorflow import seed_tensorflow, domesticate_tensorflow
+from saatgut._seed_torch import seed_torch, domesticate_torch
 
-from _secure_import import _exception_catcher, _silent_secure_import
+from saatgut._secure_import import _exception_catcher, _silent_secure_import
 
 
 __ALL_SEEDING_FUNCTIONS__ = {

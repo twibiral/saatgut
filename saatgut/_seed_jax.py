@@ -1,4 +1,4 @@
-from _secure_import import secure_import
+from saatgut._secure_import import secure_import
 
 
 @secure_import("jax")
