@@ -29,7 +29,7 @@ def secure_import(module_name: str) -> Callable[[T], T]:
     return decorator
 
 
-def _silent_secure_import(module_name: str) -> Callable[[T], T]:
+def _silent_secure_import(module_name: str, func: T) -> T:
     """
     Decorator to silently import a module, ensuring it is installed before proceeding.
     Used by the general seeder function to avoid printing errors if the module is not available.
@@ -40,16 +40,14 @@ def _silent_secure_import(module_name: str) -> Callable[[T], T]:
     Returns:
         Callable: A decorator that checks for the module's availability without printing errors.
     """
-    def decorator(func: T) -> T:
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            try:
-                importlib.import_module(module_name)
-            except ImportError:
-                pass  # Silently ignore the ImportError
-            return func(*args, **kwargs)
-        return wrapper
-    return decorator
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        try:
+            importlib.import_module(module_name)
+        except ImportError:
+            return lambda seed: None  # Return a no-op function if the module is not available
+        return func(*args, **kwargs)
+    return wrapper
 
 
 def _exception_catcher(package_name: str, func: T) -> T:

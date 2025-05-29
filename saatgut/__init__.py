@@ -34,7 +34,7 @@ def seed_everything(seed: int = 42):
     """
     for package_name, planter in __ALL_SEEDING_FUNCTIONS__.items():
         try:
-            _exception_catcher(package_name, _silent_secure_import(package_name)(planter))(seed)
+            _exception_catcher(package_name, _silent_secure_import(package_name, planter))(seed)
         except Exception as e:
             print(f"Error while seeding with {planter.__name__}: {e}")
 
@@ -56,7 +56,7 @@ def domesticate_everything(seed: int = 42, hard_mode: bool = False):
     # First cultivate all libraries normally:
     for package_name, planter in __ALL_CULTIVATION_FUNCTIONS__.items():
         try:
-            _exception_catcher(package_name, _silent_secure_import(package_name)(planter))(seed)
+            _exception_catcher(package_name, _silent_secure_import(package_name, planter))(seed)
         except Exception as e:
             print(f"Error while cultivating {planter}: {e}")
 
