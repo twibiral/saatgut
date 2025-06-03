@@ -12,6 +12,10 @@ from saatgut import seed_everything
 seed_everything(42)
 ```
 
+The saatgut library is a simple interface to set the seed of many different python libraries. Often times it is helpful to disable all randomness in the program execution to make debugging easier or to make machine learning pipelines more reproducible.
+When calling the function above, saatgut checks if any of the libraries it knows are installed, and if they are, it sets the given random seed for them. 
+
+
 But sometimes, the seed is not enough. To improve reproducibility even more, you can domesticate everything. 
 This will seed your libraries and modify OS variables to ensure that the environment is as consistent as possible.
 
