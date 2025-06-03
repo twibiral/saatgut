@@ -25,7 +25,7 @@ from saatgut import domesticate_everything
 domesticate_everything(42)
 ```
 
-To exterminate even the last but of randomness, you can use the hard mode. 
+To exterminate even the last bit of randomness, you can enable the "hard mode". 
 This will disable parallel execution in libraries that support it, modify more OS variables, and overwrite some
 functions from the `random` module. This will ensure that your code runs in a fully deterministic manner, 
 but it will significantly slow down your code (depending on the libraries you use) and make 
